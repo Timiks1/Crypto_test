@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P5sKTtC0FwncVcnEgXDFh1oyBbcPcI1rz0+4A0NkfQXYbP7TZrgDGNYdD/TNh0EglOsjDcDVyVt0eQ764b5D+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Crypto test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tim\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

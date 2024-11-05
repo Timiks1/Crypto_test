@@ -1,0 +1,21 @@
+﻿<Window x:Class="Crypto_test.View.CoinDetailView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Coin Details" Height="400" Width="600">
+    <StackPanel Margin="10" HorizontalAlignment="Center">
+        <TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Image Source="{Binding Image.Large}" Height="100" Width="100" Margin="10"/>
+        <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="10"/>
+
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Current Price:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding MarketData.CurrentPrice.Usd, StringFormat=C}"/>
+
+            <TextBlock Text="Market Cap:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding MarketData.MarketCap, StringFormat=C}"/>
+
+            <TextBlock Text="Total Volume:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding MarketData.TotalVolume, StringFormat=N0}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

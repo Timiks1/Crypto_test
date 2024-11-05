@@ -1,0 +1,31 @@
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Crypto test.exe
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Crypto test.deps.json
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Crypto test.runtimeconfig.json
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Crypto test.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Crypto test.pdb
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test_MarkupCompile.cache
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test_MarkupCompile.lref
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.g.resources
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.AssemblyInfoInputs.cache
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.AssemblyInfo.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.csproj.CoreCompileInputs.cache
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\refint\Crypto test.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.pdb
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.genruntimeconfig.cache
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\ref\Crypto test.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.csproj.AssemblyReference.cache
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto t.650FE213.Up2Date
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\Themes\DarkTheme.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\Themes\LightTheme.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\App.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailView.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailView.g.cs
