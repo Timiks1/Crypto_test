@@ -4,63 +4,9 @@
         Title="Crypto App" Height="600" Width="800">
     <Grid Background="{StaticResource PrimaryBackgroundColor}">
         <Border Background="{StaticResource SecondaryBackgroundColor}" Padding="8" Margin="10" BorderBrush="{StaticResource BorderColor}" BorderThickness="1">
-            <ListView Name="CryptoListView" ItemsSource="{Binding TopCurrencies}" >
-                <ListView.View>
-                    <GridView>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
 
-                        <!-- Колонка: Название и Иконка -->
-                        <GridViewColumn Header="Название" Width="200">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Image Width="24" Height="24" Source="{Binding Image}" Margin="0,0,8,0"/>
-                                        <TextBlock Text="{Binding Name}" Foreground="{StaticResource TextColor}" FontWeight="Bold" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
 
-                        <!-- Колонка: Символ -->
-                        <GridViewColumn Header="Символ" Width="80">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Symbol}" Foreground="{StaticResource TextColor}" HorizontalAlignment="Center"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-
-                        <!-- Колонка: Текущая цена -->
-                        <GridViewColumn Header="Цена" Width="120">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding CurrentPrice, StringFormat=C}" Foreground="{StaticResource TextColor}" HorizontalAlignment="Right"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-
-                        <!-- Колонка: Изменение за 24ч -->
-                        <GridViewColumn Header="Изм. (24ч)" Width="100">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding PriceChangePercentage24h, StringFormat=P2}" 
-                                               HorizontalAlignment="Right" 
-                                               Foreground="{Binding PriceChangePercentage24h, Converter={StaticResource PriceChangeToColorConverter}}"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-
-                        <!-- Колонка: Рыночная капитализация -->
-                        <GridViewColumn Header="Рыночная капитализация" Width="150">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding MarketCap, StringFormat=N0}" Foreground="{StaticResource TextColor}" HorizontalAlignment="Right"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-
-                    </GridView>
-                </ListView.View>
-            </ListView>
         </Border>
     </Grid>
 </Window>

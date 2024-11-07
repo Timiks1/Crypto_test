@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Tim\source\repos\Crypto test\Crypto test\App.xaml
-51148194973
+6-1255270272
 
-191848921163
-1991323265997
-MainWindow.xaml;View\CoinDetailView.xaml;View\MainView.xaml;View\Themes\DarkTheme.xaml;View\Themes\LightTheme.xaml;
+22-1998923599
+202900786638
+MainWindow.xaml;View\CoinDetailPage.xaml;View\CryptoListPage.xaml;View\MainView.xaml;View\Themes\DarkTheme.xaml;View\Themes\LightTheme.xaml;
 
 False
 

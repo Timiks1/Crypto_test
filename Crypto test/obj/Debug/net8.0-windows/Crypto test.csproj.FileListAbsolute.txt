@@ -27,5 +27,12 @@ C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypt
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\Themes\DarkTheme.baml
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\Themes\LightTheme.baml
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\App.baml
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailView.baml
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailView.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.sourcelink.json
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailPage.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CryptoListPage.g.cs
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailPage.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CryptoListPage.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\OxyPlot.Wpf.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\OxyPlot.Wpf.Shared.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\Crypto test.dll.config

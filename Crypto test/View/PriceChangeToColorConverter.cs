@@ -14,7 +14,7 @@ namespace Crypto_test.View
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is decimal change)
+            if (value is double change)
             {
                 if (change > 0)
                 {
