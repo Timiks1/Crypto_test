@@ -21,6 +21,7 @@ using OxyPlot.Series;
 using OxyPlot;
 using OxyPlot.Series;
 using Crypto_test.Model.CoinCap;
+using Crypto_test.ViewModel;
 
 namespace Crypto_test.View
 {
@@ -30,11 +31,14 @@ namespace Crypto_test.View
     public partial class CoinDetailPage : Page
     {
         public PlotModel CandleStickModel { get; private set; }
-
+        public List<Market> Markets { get; private set; } = new List<Market>();
+        public CoinDetailViewModel model { get; private set; }
+        Currency coin;
         public CoinDetailPage(Currency currency)
         {
             InitializeComponent();
             DataContext = this;
+            coin = currency;
             DataContext = currency; // Устанавливаем объект Currency как DataContext
             InitializeCoinData(currency.name);
 
@@ -48,6 +52,10 @@ namespace Crypto_test.View
             {
                 // Загружаем и отображаем данные графика
                 LoadChartData(coinId);
+                Markets = await GetMarketsForCoin(coinId);
+                model = new CoinDetailViewModel(coin);
+                model.Markets = Markets;
+                DataContext = model;
             }
             else
             {
@@ -76,6 +84,19 @@ namespace Crypto_test.View
 
             var coin = data.Data.FirstOrDefault(c => c.Name.Equals(coinName, StringComparison.OrdinalIgnoreCase));
             return coin?.Id;  // Вернет id монеты или null, если не найдено
+        }
+        public async Task<List<Market>> GetMarketsForCoin(string coinId)
+        {
+            using var client = new HttpClient();
+            string url = $"https://api.coincap.io/v2/assets/{coinId}/markets";
+
+            var response = await client.GetStringAsync(url);
+            var data = JsonConvert.DeserializeObject<MarketResponse>(response);
+
+            // Добавляем URL для перехода на сайт биржи
+
+
+            return data?.Data;
         }
         public async Task<List<CandleData>> FetchHistoricalData(string coinId)
         {

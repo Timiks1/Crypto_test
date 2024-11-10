@@ -21,21 +21,20 @@ using System.Windows.Shapes;
 
 namespace Crypto_test.View
 {
-    /// <summary>
-    /// Логика взаимодействия для CryptoListPage.xaml
-    /// </summary>
     public partial class CryptoListPage : Page
     {
         private readonly HttpClient _httpClient;
         public ObservableCollection<Currency> TopCurrencies { get; set; }
-        private string ApiKey; // Ваш ключ CoinMarketCap
+        public ObservableCollection<Currency> FilteredCurrencies { get; set; } // Отфильтрованный список
+        private string ApiKey;
 
         public CryptoListPage()
         {
             InitializeComponent();
             TopCurrencies = new ObservableCollection<Currency>();
+            FilteredCurrencies = new ObservableCollection<Currency>(); // Инициализация отфильтрованной коллекции
             _httpClient = new HttpClient();
-            CryptoItemsControl.ItemsSource = TopCurrencies;
+            CryptoItemsControl.ItemsSource = FilteredCurrencies;
             ApiKey = ConfigurationManager.AppSettings["CoinMarketCapApiKey"];
             if (string.IsNullOrEmpty(ApiKey))
             {
@@ -45,34 +44,65 @@ namespace Crypto_test.View
             LoadTopCurrencies();
         }
 
-
         private async Task LoadTopCurrencies()
         {
             try
             {
-                // Настраиваем заголовки для CoinMarketCap API
                 _httpClient.DefaultRequestHeaders.Clear();
                 _httpClient.DefaultRequestHeaders.Add("X-CMC_PRO_API_KEY", ApiKey);
                 _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
-                // Выполняем запрос к API CoinMarketCap
-                string url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=20";
+                // Убираем лимит, чтобы получить все валюты
+                string url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
                 var response = await _httpClient.GetStringAsync(url);
 
-                // Десериализуем ответ
                 var data = JsonConvert.DeserializeObject<CoinMarketCapResponse>(response);
 
-                // Очищаем и добавляем полученные данные в коллекцию
                 TopCurrencies.Clear();
+                FilteredCurrencies.Clear();
+
+                // Сохраняем все валюты в TopCurrencies
                 foreach (var currency in data.Data)
                 {
                     TopCurrencies.Add(currency);
                 }
+
+                // Отображаем только первые 20 валют в FilteredCurrencies
+                foreach (var currency in TopCurrencies.Take(20))
+                {
+                    FilteredCurrencies.Add(currency);
+                }
             }
             catch (Exception ex)
             {
-                // Обработка ошибки
                 Console.WriteLine($"Error loading top currencies: {ex.Message}");
+            }
+        }
+
+
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string filterText = SearchTextBox.Text.ToLower();
+            FilteredCurrencies.Clear();
+
+            if (string.IsNullOrEmpty(filterText))
+            {
+                // Если поле ввода пустое, показываем первые 20 монет
+                foreach (var currency in TopCurrencies.Take(20))
+                {
+                    FilteredCurrencies.Add(currency);
+                }
+            }
+            else
+            {
+                // Фильтруем список по введённому тексту
+                foreach (var currency in TopCurrencies)
+                {
+                    if (currency.name.ToLower().Contains(filterText) || currency.symbol.ToLower().Contains(filterText))
+                    {
+                        FilteredCurrencies.Add(currency);
+                    }
+                }
             }
         }
 
@@ -84,6 +114,12 @@ namespace Crypto_test.View
                 NavigationService.Navigate(coinDetailsPage);
             }
         }
+        private void OpenConversionPage_Click(object sender, RoutedEventArgs e)
+        {
+            // Переход на страницу конвертации и передача списка валют
+            var conversionPage = new ConversionPage(TopCurrencies);
+            NavigationService.Navigate(conversionPage);
+        }
+
     }
 }
-
