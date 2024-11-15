@@ -12,55 +12,55 @@
         <local:EmptyStringToVisibilityConverter x:Key="EmptyStringToVisibilityConverter"/>
     </Page.Resources>
     <Grid Margin="20">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" >
-            <Button x:Name="BackButton" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Click="BackButton_Click"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+
+            <!-- Кнопка Назад -->
+            <Button Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Click="BackButton_Click"/>
 
             <!-- Заголовок страницы -->
             <TextBlock Text="Конвертер валют" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
             <!-- Выбор исходной валюты -->
             <Grid Width="250" Margin="0,10,0,0">
-                <ComboBox x:Name="FromCurrencyComboBox" 
-                          ItemsSource="{Binding Currencies}" 
+                <ComboBox ItemsSource="{Binding Currencies}" 
+                          SelectedItem="{Binding FromCurrency}" 
                           DisplayMemberPath="name" 
-                          SelectedValuePath="id" 
                           Width="250"/>
                 <!-- Placeholder для ComboBox -->
                 <TextBlock Text="Выберите исходную валюту" Foreground="Gray" 
                            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
                            IsHitTestVisible="False"
-                           Visibility="{Binding SelectedItem, ElementName=FromCurrencyComboBox, Converter={StaticResource NullToVisibilityConverter}}"/>
+                           Visibility="{Binding FromCurrency, Converter={StaticResource NullToVisibilityConverter}}"/>
             </Grid>
 
             <!-- Поле ввода суммы -->
             <Grid Width="250" Margin="0,10,0,0">
-                <TextBox x:Name="AmountTextBox" />
+                <TextBox Text="{Binding AmountText, UpdateSourceTrigger=PropertyChanged}" />
                 <!-- Placeholder для TextBox -->
                 <TextBlock Text="Введите сумму" Foreground="Gray" 
                            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
                            IsHitTestVisible="False"
-                           Visibility="{Binding Text, ElementName=AmountTextBox, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                           Visibility="{Binding AmountText, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
             </Grid>
 
             <!-- Выбор целевой валюты -->
             <Grid Width="250" Margin="0,10,0,0">
-                <ComboBox x:Name="ToCurrencyComboBox" 
-                          ItemsSource="{Binding Currencies}" 
+                <ComboBox ItemsSource="{Binding Currencies}" 
+                          SelectedItem="{Binding ToCurrency}" 
                           DisplayMemberPath="name" 
-                          SelectedValuePath="id" 
                           Width="250"/>
                 <!-- Placeholder для ComboBox -->
                 <TextBlock Text="Выберите целевую валюту" Foreground="Gray" 
                            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
                            IsHitTestVisible="False"
-                           Visibility="{Binding SelectedItem, ElementName=ToCurrencyComboBox, Converter={StaticResource NullToVisibilityConverter}}"/>
+                           Visibility="{Binding ToCurrency, Converter={StaticResource NullToVisibilityConverter}}"/>
             </Grid>
 
-            <!-- Кнопка конвертации -->
-            <Button Content="Конвертировать" Width="250" Margin="0,10,0,0" Click="ConvertButton_Click"/>
+            <!-- Кнопка Конвертации -->
+            <Button Content="Конвертировать" Width="250" Margin="0,10,0,0" Command="{Binding ConvertCommand}"/>
 
-            <!-- Отображение результата -->
-            <TextBlock x:Name="ResultTextBlock" FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            <!-- Результат конвертации -->
+            <TextBlock Text="{Binding ConversionResult}" FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,0"/>
         </StackPanel>
     </Grid>
 </Page>
