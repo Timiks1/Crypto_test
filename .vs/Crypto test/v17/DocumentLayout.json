@@ -7,6 +7,42 @@
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\coindetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\coindetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\coindetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\coindetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\coindetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\coindetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\repository\\currencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\repository\\currencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\cryptolistpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\cryptolistpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\cryptolistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\cryptolistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\repository\\icurrencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\repository\\icurrencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\conversionpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\conversionpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,24 +55,8 @@
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\coindetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\coindetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\conversionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\conversionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\coindetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\coindetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\cryptolistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\cryptolistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\cryptolistpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\cryptolistpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\emptystringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +71,12 @@
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\coindetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\coindetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\cryptolistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\cryptolistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\pricechangetocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\model\\coinmarket\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\model\\coinmarket\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|solutionrelative:crypto test\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2D37F3-57E4-4C85-9A55-1AE93D1530C8}|Crypto test\\Crypto test.csproj|c:\\users\\tim\\source\\repos\\crypto test\\crypto test\\view\\adaptivefontsizeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -172,90 +180,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\RelayCommand.cs",
-              "RelativeToolTip": "Crypto test\\ViewModel\\RelayCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T14:26:08.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CoinDetailPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml.cs",
-              "RelativeDocumentMoniker": "Crypto test\\View\\CoinDetailPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml.cs",
-              "RelativeToolTip": "Crypto test\\View\\CoinDetailPage.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:09:14.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConversionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml.cs",
-              "RelativeDocumentMoniker": "Crypto test\\View\\ConversionPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml.cs",
-              "RelativeToolTip": "Crypto test\\View\\ConversionPage.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAmwCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T15:37:35.25Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConversionPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\ConversionPageViewModel.cs",
-              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\ConversionPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\ConversionPageViewModel.cs",
-              "RelativeToolTip": "Crypto test\\ViewModel\\ConversionPageViewModel.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwCMAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T14:20:34.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConversionPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml",
-              "RelativeDocumentMoniker": "Crypto test\\View\\ConversionPage.xaml",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml",
-              "RelativeToolTip": "Crypto test\\View\\ConversionPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T15:37:03.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "CoinDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\CoinDetailViewModel.cs",
               "RelativeDocumentMoniker": "Crypto test\\ViewModel\\CoinDetailViewModel.cs",
               "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\CoinDetailViewModel.cs",
               "RelativeToolTip": "Crypto test\\ViewModel\\CoinDetailViewModel.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAIwCUAAAAxAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAkwFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:23:03.737Z"
+              "WhenOpened": "2024-11-10T13:23:03.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CurrencyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Repository\\CurrencyRepository.cs",
+              "RelativeDocumentMoniker": "Crypto test\\Repository\\CurrencyRepository.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Repository\\CurrencyRepository.cs",
+              "RelativeToolTip": "Crypto test\\Repository\\CurrencyRepository.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAewB4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:35:57.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CryptoListPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
+              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
+              "RelativeToolTip": "Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA4wEEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:11:49.365Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CryptoListPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CryptoListPage.xaml.cs",
-              "RelativeDocumentMoniker": "Crypto test\\View\\CryptoListPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CryptoListPage.xaml.cs",
-              "RelativeToolTip": "Crypto test\\View\\CryptoListPage.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAfAAAA",
+              "Title": "ICurrencyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Repository\\ICurrencyRepository.cs",
+              "RelativeDocumentMoniker": "Crypto test\\Repository\\ICurrencyRepository.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Repository\\ICurrencyRepository.cs",
+              "RelativeToolTip": "Crypto test\\Repository\\ICurrencyRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:07:44.476Z"
+              "WhenOpened": "2024-11-15T14:35:42.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CoinDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml",
+              "RelativeDocumentMoniker": "Crypto test\\View\\CoinDetailPage.xaml",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml",
+              "RelativeToolTip": "Crypto test\\View\\CoinDetailPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T14:08:40.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoinDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "Crypto test\\View\\CoinDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml.cs",
+              "RelativeToolTip": "Crypto test\\View\\CoinDetailPage.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T14:09:14.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -272,7 +274,93 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CryptoListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CryptoListPage.xaml.cs",
+              "RelativeDocumentMoniker": "Crypto test\\View\\CryptoListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CryptoListPage.xaml.cs",
+              "RelativeToolTip": "Crypto test\\View\\CryptoListPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T14:07:44.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "Crypto test\\View\\MainView.xaml.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\MainView.xaml.cs",
+              "RelativeToolTip": "Crypto test\\View\\MainView.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:21:22.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "Crypto test\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:04:12.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConversionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml",
+              "RelativeDocumentMoniker": "Crypto test\\View\\ConversionPage.xaml",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml",
+              "RelativeToolTip": "Crypto test\\View\\ConversionPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-10T15:37:03.07Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ConversionPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\ConversionPageViewModel.cs",
+              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\ConversionPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\ConversionPageViewModel.cs",
+              "RelativeToolTip": "Crypto test\\ViewModel\\ConversionPageViewModel.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwCMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:20:34.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConversionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml.cs",
+              "RelativeDocumentMoniker": "Crypto test\\View\\ConversionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\ConversionPage.xaml.cs",
+              "RelativeToolTip": "Crypto test\\View\\ConversionPage.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:37:35.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\RelayCommand.cs",
+              "RelativeToolTip": "Crypto test\\ViewModel\\RelayCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:26:08.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\ViewModelBase.cs",
               "RelativeDocumentMoniker": "Crypto test\\ViewModel\\ViewModelBase.cs",
@@ -284,30 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CoinDetailPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml",
-              "RelativeDocumentMoniker": "Crypto test\\View\\CoinDetailPage.xaml",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CoinDetailPage.xaml",
-              "RelativeToolTip": "Crypto test\\View\\CoinDetailPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T14:08:40.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CryptoListPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
-              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
-              "RelativeToolTip": "Crypto test\\ViewModel\\CryptoListPageViewModel.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwEUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T14:11:49.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "CryptoListPage.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\CryptoListPage.xaml",
               "RelativeDocumentMoniker": "Crypto test\\View\\CryptoListPage.xaml",
@@ -318,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "EmptyStringToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\EmptyStringToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "Crypto test\\View\\EmptyStringToVisibilityConverter.cs",
@@ -330,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\MainView.xaml",
               "RelativeDocumentMoniker": "Crypto test\\View\\MainView.xaml",
@@ -341,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "NullToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\NullToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "Crypto test\\View\\NullToVisibilityConverter.cs",
@@ -353,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Currency.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinMarket\\Currency.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinMarket\\Currency.cs",
@@ -366,18 +431,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "Crypto test\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "Crypto test\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:04:12.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "PriceChangeToColorConverter.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\PriceChangeToColorConverter.cs",
               "RelativeDocumentMoniker": "Crypto test\\View\\PriceChangeToColorConverter.cs",
@@ -389,19 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MainView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\MainView.xaml.cs",
-              "RelativeDocumentMoniker": "Crypto test\\View\\MainView.xaml.cs",
-              "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\MainView.xaml.cs",
-              "RelativeToolTip": "Crypto test\\View\\MainView.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:21:22.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "TextToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\TextToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "Crypto test\\View\\TextToVisibilityConverter.cs",
@@ -413,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "AdaptiveFontSizeConverter.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\AdaptiveFontSizeConverter.cs",
               "RelativeDocumentMoniker": "Crypto test\\View\\AdaptiveFontSizeConverter.cs",
@@ -425,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "MarketResponse.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinMarket\\MarketResponse.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinMarket\\MarketResponse.cs",
@@ -437,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Market.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinMarket\\Market.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinMarket\\Market.cs",
@@ -449,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "HistoricalDataResponse.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinCap\\HistoricalDataResponse.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinCap\\HistoricalDataResponse.cs",
@@ -461,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "CoinCapResponse.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinCap\\CoinCapResponse.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinCap\\CoinCapResponse.cs",
@@ -473,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "CandleData.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinCap\\CandleData.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinCap\\CandleData.cs",
@@ -485,18 +526,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "LightTheme.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\Themes\\LightTheme.xaml",
               "RelativeDocumentMoniker": "Crypto test\\View\\Themes\\LightTheme.xaml",
               "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\Themes\\LightTheme.xaml",
               "RelativeToolTip": "Crypto test\\View\\Themes\\LightTheme.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-05T14:40:54.88Z"
+              "WhenOpened": "2024-11-05T14:40:54.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "CoinData.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinCap\\CoinData.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinCap\\CoinData.cs",
@@ -508,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "HistoricalQuote.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinCap\\HistoricalQuote.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinCap\\HistoricalQuote.cs",
@@ -520,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CoinDetailPage.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\AppData\\Local\\Temp\\.vsdbgsrc\\1d94d7ec601877ff338e0b6e44d076eae52dc3bdc7b15d43bfa8d478cfc24ead\\CoinDetailPage.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1d94d7ec601877ff338e0b6e44d076eae52dc3bdc7b15d43bfa8d478cfc24ead\\CoinDetailPage.cs",
@@ -533,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "USD.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinMarket\\USD.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinMarket\\USD.cs",
@@ -545,18 +587,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\App.xaml",
               "RelativeDocumentMoniker": "Crypto test\\App.xaml",
               "ToolTip": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\App.xaml",
               "RelativeToolTip": "Crypto test\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-05T14:12:05.929Z"
+              "WhenOpened": "2024-11-05T14:12:05.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Quote.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinMarket\\Quote.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinMarket\\Quote.cs",
@@ -568,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "CoinMarketCapResponse.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\CoinMarket\\CoinMarketCapResponse.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\CoinMarket\\CoinMarketCapResponse.cs",
@@ -580,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\App.xaml.cs",
               "RelativeDocumentMoniker": "Crypto test\\App.xaml.cs",
@@ -592,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Market.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\Market.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\Market.cs",
@@ -604,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Crypto test\\AssemblyInfo.cs",
@@ -616,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "DarkTheme.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\View\\Themes\\DarkTheme.xaml",
               "RelativeDocumentMoniker": "Crypto test\\View\\Themes\\DarkTheme.xaml",
@@ -627,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\Model\\ApiResponse.cs",
               "RelativeDocumentMoniker": "Crypto test\\Model\\ApiResponse.cs",
@@ -639,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
@@ -647,11 +690,12 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
               "ViewState": "AQIAAOwBAAAAAAAAAAAAwP4BAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:47:38.878Z"
+              "WhenOpened": "2024-11-05T14:47:38.878Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\source\\repos\\Crypto test\\Crypto test\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Crypto test\\MainWindow.xaml.cs",

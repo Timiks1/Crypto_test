@@ -1,58 +1,39 @@
 ﻿using Crypto_test.Model.CoinMarket;
-using Newtonsoft.Json;
-using System;
+using Crypto_test.Repository;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Crypto_test.ViewModel
 {
-    public class CryptoListPageViewModel : INotifyPropertyChanged
+    public class CryptoListPageViewModel
     {
-        private readonly HttpClient _httpClient;
+        private readonly ICurrencyRepository _repository;
 
-        public ObservableCollection<Currency> TopCurrencies { get; set; }
-        public ObservableCollection<Currency> FilteredCurrencies { get; set; }
+        public ObservableCollection<Currency> TopCurrencies { get; private set; }
+        public ObservableCollection<Currency> FilteredCurrencies { get; private set; }
 
-        public CryptoListPageViewModel()
+        public CryptoListPageViewModel(ICurrencyRepository repository)
         {
+            _repository = repository;
             TopCurrencies = new ObservableCollection<Currency>();
             FilteredCurrencies = new ObservableCollection<Currency>();
-            _httpClient = new HttpClient();
         }
 
-        public async Task LoadCurrenciesAsync(string apiKey)
+        public async Task LoadCurrenciesAsync()
         {
-            try
+            var currencies = await _repository.GetCurrenciesAsync();
+
+            TopCurrencies.Clear();
+            foreach (var currency in currencies)
             {
-                _httpClient.DefaultRequestHeaders.Clear();
-                _httpClient.DefaultRequestHeaders.Add("X-CMC_PRO_API_KEY", apiKey);
-                _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
-
-                string url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
-                var response = await _httpClient.GetStringAsync(url);
-
-                var data = JsonConvert.DeserializeObject<CoinMarketCapResponse>(response);
-
-                TopCurrencies.Clear();
-                FilteredCurrencies.Clear();
-
-                foreach (var currency in data.Data)
-                {
-                    TopCurrencies.Add(currency);
-                }
-
-                // Показать первые 20 валют
-                foreach (var currency in TopCurrencies.Take(20))
-                {
-                    FilteredCurrencies.Add(currency);
-                }
+                TopCurrencies.Add(currency);
             }
-            catch (Exception ex)
+
+            // Отображаем первые 20 валют
+            FilteredCurrencies.Clear();
+            foreach (var currency in TopCurrencies.Take(20))
             {
-                Console.WriteLine($"Error loading top currencies: {ex.Message}");
+                FilteredCurrencies.Add(currency);
             }
         }
 
@@ -62,6 +43,7 @@ namespace Crypto_test.ViewModel
 
             if (string.IsNullOrEmpty(searchText))
             {
+                // Если поле ввода пустое, показываем первые 20 валют
                 foreach (var currency in TopCurrencies.Take(20))
                 {
                     FilteredCurrencies.Add(currency);
@@ -69,18 +51,16 @@ namespace Crypto_test.ViewModel
             }
             else
             {
-                foreach (var currency in TopCurrencies)
+                // Фильтруем список валют по имени или символу
+                var filtered = TopCurrencies
+                    .Where(c => c.name.Contains(searchText, StringComparison.OrdinalIgnoreCase) ||
+                                c.symbol.Contains(searchText, StringComparison.OrdinalIgnoreCase));
+
+                foreach (var currency in filtered)
                 {
-                    if (currency.name.ToLower().Contains(searchText.ToLower()) || currency.symbol.ToLower().Contains(searchText.ToLower()))
-                    {
-                        FilteredCurrencies.Add(currency);
-                    }
+                    FilteredCurrencies.Add(currency);
                 }
             }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

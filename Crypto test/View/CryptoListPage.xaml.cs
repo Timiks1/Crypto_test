@@ -1,4 +1,5 @@
 ﻿using Crypto_test.Model.CoinMarket;
+using Crypto_test.Repository;
 using Crypto_test.ViewModel;
 using System.Configuration;
 using System.Windows;
@@ -15,19 +16,12 @@ namespace Crypto_test.View
         {
             InitializeComponent();
 
-            // Инициализация ViewModel
-            _viewModel = new CryptoListPageViewModel();
+            var repository = new CurrencyRepository();
+            _viewModel = new CryptoListPageViewModel(repository);
+
             DataContext = _viewModel;
 
-            // Загрузка данных
-            var apiKey = ConfigurationManager.AppSettings["CoinMarketCapApiKey"];
-            if (string.IsNullOrEmpty(apiKey))
-            {
-                MessageBox.Show("API ключ не найден в конфигурации.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            _ = _viewModel.LoadCurrenciesAsync(apiKey);
+            Loaded += async (s, e) => await _viewModel.LoadCurrenciesAsync();
         }
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)

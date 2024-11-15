@@ -1,124 +1,86 @@
-﻿using Crypto_test.Model.CoinCap;
-using Crypto_test.Model.CoinMarket;
-using Newtonsoft.Json;
+﻿using Crypto_test.Model.CoinMarket;
+using Crypto_test.Repository;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Crypto_test.ViewModel
 {
     public class CoinDetailViewModel : INotifyPropertyChanged
     {
-        private readonly HttpClient _httpClient = new();
+        private readonly ICurrencyRepository _repository;
+
+        private List<Market> _markets;
+        private PlotModel _candleStickModel;
 
         public Currency Coin { get; set; }
-        public List<Market> Markets { get; private set; }
-        public PlotModel CandleStickModel { get; private set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public CoinDetailViewModel(Currency coin)
+        public List<Market> Markets
         {
-            Coin = coin;
-            Markets = new List<Market>();
-        }
-
-        public async Task InitializeCoinDataAsync()
-        {
-            var coinId = await GetCoinIdByName(Coin.name);
-
-            if (!string.IsNullOrEmpty(coinId))
+            get => _markets;
+            set
             {
-                await LoadChartDataAsync(coinId);
-                Markets = await GetMarketsForCoinAsync(coinId);
+                _markets = value;
                 OnPropertyChanged(nameof(Markets));
             }
         }
 
-        private async Task<string> GetCoinIdByName(string coinName)
+        public PlotModel CandleStickModel
         {
-            string url = "https://api.coincap.io/v2/assets";
-
-            var response = await _httpClient.GetStringAsync(url);
-            var data = JsonConvert.DeserializeObject<CoinCapResponse>(response);
-
-            var coin = data.Data.FirstOrDefault(c => c.Name.Equals(coinName, StringComparison.OrdinalIgnoreCase));
-            return coin?.Id;
-        }
-
-        private async Task<List<Market>> GetMarketsForCoinAsync(string coinId)
-        {
-            string url = $"https://api.coincap.io/v2/assets/{coinId}/markets";
-
-            var response = await _httpClient.GetStringAsync(url);
-            var data = JsonConvert.DeserializeObject<MarketResponse>(response);
-
-            return data?.Data ?? new List<Market>();
-        }
-
-        private async Task<List<CandleData>> FetchHistoricalDataAsync(string coinId)
-        {
-            string url = $"https://api.coincap.io/v2/assets/{coinId}/history?interval=d1";
-
-            var response = await _httpClient.GetStringAsync(url);
-            var data = JsonConvert.DeserializeObject<HistoricalDataResponse>(response);
-
-            return data?.Data.Select(q => new CandleData
+            get => _candleStickModel;
+            set
             {
-                Date = DateTime.Parse(q.Date),
-                Open = q.PriceUsd,
-                High = q.PriceUsd,
-                Low = q.PriceUsd,
-                Close = q.PriceUsd
-            }).ToList();
-        }
-
-        private async Task LoadChartDataAsync(string coinId)
-        {
-            var historicalData = await FetchHistoricalDataAsync(coinId);
-
-            if (historicalData != null)
-            {
-                var model = new PlotModel { Title = $"{Coin.name} Price Chart" };
-
-                // Настройка осей
-                model.Axes.Add(new DateTimeAxis
-                {
-                    Position = AxisPosition.Bottom,
-                    StringFormat = "dd/MM",
-                    Title = "Date",
-                    IntervalType = DateTimeIntervalType.Days
-                });
-
-                model.Axes.Add(new LinearAxis
-                {
-                    Position = AxisPosition.Left,
-                    Title = "Price (USD)"
-                });
-
-                // Добавление данных графика
-                var lineSeries = new LineSeries
-                {
-                    Color = OxyColors.Red,
-                    StrokeThickness = 2
-                };
-
-                foreach (var data in historicalData)
-                {
-                    lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data.Date), data.Close));
-                }
-
-                model.Series.Add(lineSeries);
-                CandleStickModel = model;
-
+                _candleStickModel = value;
                 OnPropertyChanged(nameof(CandleStickModel));
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public CoinDetailViewModel(Currency coin, ICurrencyRepository repository)
+        {
+            Coin = coin;
+            _repository = repository;
+            Markets = new List<Market>();
+        }
+
+        public async Task InitializeAsync()
+        {
+            string coinId = await _repository.GetCurrencyIdByNameAsync(Coin.name);
+            if (string.IsNullOrEmpty(coinId))
+            {
+                Console.WriteLine("Ошибка: ID монеты не найден.");
+                return;
+            }
+
+            Markets = await _repository.GetMarketsForCurrencyAsync(coinId);
+            if (Markets == null || Markets.Count == 0)
+            {
+                Console.WriteLine("Ошибка: Рынки не найдены.");
+            }
+
+            var historicalData = await _repository.GetHistoricalDataAsync(coinId);
+            if (historicalData == null || historicalData.Count == 0)
+            {
+                Console.WriteLine("Ошибка: Исторические данные не найдены.");
+                return;
+            }
+
+            var model = new PlotModel { Title = $"{Coin.name} Price Chart" };
+            model.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd/MM", Title = "Date" });
+            model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Title = "Price (USD)" });
+
+            var series = new LineSeries { Title = "Price", StrokeThickness = 2 };
+            foreach (var data in historicalData)
+            {
+                series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(data.Date), data.Close));
+            }
+
+            model.Series.Add(series);
+            CandleStickModel = model;
         }
 
         protected void OnPropertyChanged(string propertyName) =>
