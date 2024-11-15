@@ -13,6 +13,14 @@
         },
         "runtime": {
           "Crypto test.dll": {}
+        },
+        "resources": {
+          "ru/Crypto test.resources.dll": {
+            "locale": "ru"
+          },
+          "uk/Crypto test.resources.dll": {
+            "locale": "uk"
+          }
         }
       },
       "Newtonsoft.Json/13.0.3": {

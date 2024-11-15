@@ -1,70 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Основные цвета -->
+    <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="SecondaryBackgroundColor" Color="#FFF5F5F5" />
+    <SolidColorBrush x:Key="BorderColor" Color="#FFCCCCCC" />
+    <SolidColorBrush x:Key="TextColor" Color="#FF000000" />
 
-    <!-- Определение базовых цветов -->
-    <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="#FFFFFF"/>
-    <!-- Основной белый фон -->
-    <SolidColorBrush x:Key="SecondaryBackgroundColor" Color="#F3F3F3"/>
-    <!-- Вторичный светло-серый фон -->
-    <SolidColorBrush x:Key="TextColor" Color="#333333"/>
-    <!-- Тёмно-серый цвет текста -->
-    <SolidColorBrush x:Key="BorderColor" Color="#D1D5DB"/>
-    <!-- Светло-серый цвет для границ -->
-    <SolidColorBrush x:Key="AccentColor" Color="#007ACC"/>
-    <!-- Акцентный синий цвет -->
-
-    <!-- Стиль для окна (Window) -->
-    <Style TargetType="Window">
-        <Setter Property="Background" Value="{StaticResource PrimaryBackgroundColor}"/>
-        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
-        <Setter Property="FontFamily" Value="Segoe UI"/>
-        <Setter Property="FontSize" Value="14"/>
-    </Style>
-
-    <!-- Стиль для кнопок (Button) -->
-    <Style TargetType="Button">
-        <Setter Property="Background" Value="{StaticResource AccentColor}"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="Padding" Value="8,4"/>
-        <Setter Property="Margin" Value="4"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="FontWeight" Value="Normal"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#005A9E"/>
-                <!-- Более тёмный синий на наведении -->
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-
-    <!-- Стиль для ListView -->
-    <Style TargetType="ListView">
-        <Setter Property="Background" Value="{StaticResource SecondaryBackgroundColor}"/>
-        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Padding" Value="8"/>
-        <Setter Property="Margin" Value="8"/>
-    </Style>
-
-    <!-- Стиль для заголовков GridViewColumnHeader в ListView -->
-    <Style TargetType="GridViewColumnHeader">
-        <Setter Property="Background" Value="{StaticResource SecondaryBackgroundColor}"/>
-        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
-        <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="Padding" Value="4"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
-        <Setter Property="BorderThickness" Value="0,0,0,1"/>
-    </Style>
-
-    <!-- Стиль для текстовых блоков (TextBlock) -->
-    <Style TargetType="TextBlock">
-        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
-        <Setter Property="FontSize" Value="14"/>
-    </Style>
+    <!-- Цвета кнопок -->
+    <SolidColorBrush x:Key="ButtonBackground" Color="#FF6200EE" />
+    <SolidColorBrush x:Key="ButtonForeground" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ButtonHoverBackground" Color="#FF3700B3" />
 
 </ResourceDictionary>

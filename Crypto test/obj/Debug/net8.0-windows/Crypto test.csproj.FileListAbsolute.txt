@@ -1,7 +1,5 @@
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.csproj.AssemblyReference.cache
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\MainView.baml
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\Themes\DarkTheme.baml
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\Themes\LightTheme.baml
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CoinDetailPage.g.cs
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\CryptoListPage.g.cs
@@ -38,3 +36,11 @@ C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypt
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\ref\Crypto test.dll
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\ConversionPage.g.cs
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\ConversionPage.baml
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\ru\Crypto test.resources.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\uk\Crypto test.resources.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto_test.Resources.Resources.resources
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto_test.Resources.Resources.ru.resources
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto_test.Resources.Resources.uk.resources
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.csproj.GenerateResource.cache
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\ru\Crypto test.resources.dll
+C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\uk\Crypto test.resources.dll

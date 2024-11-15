@@ -1,5 +1,6 @@
 ﻿using Crypto_test.Model.CoinMarket;
 using Crypto_test.Repository;
+using Crypto_test.Resources;
 using Crypto_test.ViewModel;
 using System.Configuration;
 using System.Windows;
@@ -42,6 +43,29 @@ namespace Crypto_test.View
         {
             var conversionPage = new ConversionPage(_viewModel.TopCurrencies);
             NavigationService.Navigate(conversionPage);
+        }
+        private void SetLightTheme_Click(object sender, RoutedEventArgs e)
+        {
+            (Application.Current as App)?.ChangeTheme("Light");
+        }
+
+        private void SetDarkTheme_Click(object sender, RoutedEventArgs e)
+        {
+            (Application.Current as App)?.ChangeTheme("Dark");
+        }
+        private void SetEnglishLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            LocalizationManager.Instance.SetCulture("en");
+        }
+
+        private void SetRussianLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            LocalizationManager.Instance.SetCulture("ru");
+        }
+
+        private void SetUkrainianLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            LocalizationManager.Instance.SetCulture("uk");
         }
     }
 }

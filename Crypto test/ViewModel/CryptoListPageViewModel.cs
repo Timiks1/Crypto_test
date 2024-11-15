@@ -2,6 +2,7 @@
 using Crypto_test.Repository;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Crypto_test.ViewModel
 {
@@ -36,7 +37,16 @@ namespace Crypto_test.ViewModel
                 FilteredCurrencies.Add(currency);
             }
         }
-
+        private void SetEnglishLanguage_Click(object sender, RoutedEventArgs e) => ChangeLanguage("en");
+        private void SetRussianLanguage_Click(object sender, RoutedEventArgs e) => ChangeLanguage("ru");
+        private void SetUkrainianLanguage_Click(object sender, RoutedEventArgs e) => ChangeLanguage("uk");
+        private void ChangeLanguage(string lang)
+        {
+            if (Application.Current is App app)
+            {
+                app.SetLanguage(lang);
+            }
+        }
         public void FilterCurrencies(string searchText)
         {
             FilteredCurrencies.Clear();

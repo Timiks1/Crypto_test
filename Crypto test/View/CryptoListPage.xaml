@@ -8,21 +8,37 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CryptoListPage">
 
-    <Grid Background="{StaticResource PrimaryBackgroundColor}">
+    <Grid Background="{DynamicResource PrimaryBackgroundColor}">
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16">
-
             <!-- Поле поиска -->
-            <TextBox x:Name="SearchTextBox" Width="300" TextChanged="SearchTextBox_TextChanged"/>
+            <TextBox x:Name="SearchTextBox" Width="300" Background="{DynamicResource SecondaryBackgroundColor}" Foreground="{DynamicResource TextColor}" TextChanged="SearchTextBox_TextChanged" />
 
             <!-- Кнопка перехода на страницу конвертации -->
-            <Button Content="Конвертер" Width="100" Margin="10,0,0,0" Click="OpenConversionPage_Click"/>
+            <Button Content="Конвертер" Width="100" Margin="10,0,0,0" 
+                Background="{DynamicResource ButtonBackground}" 
+                Foreground="{DynamicResource ButtonForeground}" 
+                Click="OpenConversionPage_Click"/>
+
+            <Button Content="Светлая тема" Margin="5" 
+                    Background="{DynamicResource ButtonBackground}" 
+                    Foreground="{DynamicResource ButtonForeground}" 
+                    Click="SetLightTheme_Click" />
+
+            <Button Content="Темная тема" Margin="5" 
+                    Background="{DynamicResource ButtonBackground}" 
+                    Foreground="{DynamicResource ButtonForeground}" 
+                    Click="SetDarkTheme_Click" />
+            <StackPanel Orientation="Horizontal">
+                <Button Content="English" Click="SetEnglishLanguage_Click"/>
+                <Button Content="Русский" Click="SetRussianLanguage_Click"/>
+                <Button Content="Українська" Click="SetUkrainianLanguage_Click"/>
+            </StackPanel>
 
         </StackPanel>
 
         <!-- Контент с прокруткой -->
         <ScrollViewer Margin="0,60,0,0">
-            <!-- Отступ сверху для размещения поля поиска -->
             <ItemsControl Name="CryptoItemsControl" ItemsSource="{Binding FilteredCurrencies}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -32,9 +48,9 @@
 
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="8" 
-                                Background="{StaticResource SecondaryBackgroundColor}" Margin="16,8" Padding="16"
-                                HorizontalAlignment="Stretch" MouseLeftButtonUp="OnCurrencyCardClick">
+                        <Border BorderBrush="{DynamicResource BorderColor}" BorderThickness="1" CornerRadius="8" 
+                            Background="{DynamicResource SecondaryBackgroundColor}" Margin="16,8" Padding="16"
+                            HorizontalAlignment="Stretch" MouseLeftButtonUp="OnCurrencyCardClick">
                             <Grid VerticalAlignment="Center" HorizontalAlignment="Stretch">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
@@ -45,21 +61,21 @@
 
                                 <!-- Название и символ -->
                                 <StackPanel Orientation="Vertical" Grid.Column="1" Margin="16,0">
-                                    <TextBlock Text="{Binding name}" FontWeight="Bold" Foreground="{StaticResource TextColor}" FontSize="16"/>
-                                    <TextBlock Text="{Binding symbol}" Foreground="{StaticResource TextColor}" FontSize="12"/>
+                                    <TextBlock Text="{Binding name}" FontWeight="Bold" Foreground="{DynamicResource TextColor}" FontSize="16"/>
+                                    <TextBlock Text="{Binding symbol}" Foreground="{DynamicResource TextColor}" FontSize="12"/>
                                 </StackPanel>
 
                                 <!-- Текущая цена -->
                                 <TextBlock Text="{Binding quote.USD.price, StringFormat=C}" 
-                                           Foreground="{StaticResource TextColor}" FontSize="14" 
-                                           VerticalAlignment="Center" HorizontalAlignment="Right"
-                                           Margin="16,0,16,0" Grid.Column="2"/>
+                                       Foreground="{DynamicResource TextColor}" FontSize="14" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Right"
+                                       Margin="16,0,16,0" Grid.Column="2"/>
 
                                 <!-- Изменение цены за 24 часа -->
                                 <TextBlock Text="{Binding quote.USD.percent_change_24h, StringFormat=F2}" 
-                                           Foreground="{Binding quote.USD.percent_change_24h, Converter={StaticResource PriceChangeToColorConverter}}"
-                                           FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Right"
-                                           Margin="16,0,0,0" Grid.Column="3"/>
+                                       Foreground="{Binding quote.USD.percent_change_24h, Converter={StaticResource PriceChangeToColorConverter}}"
+                                       FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                       Margin="16,0,0,0" Grid.Column="3"/>
                             </Grid>
                         </Border>
                     </DataTemplate>
@@ -67,4 +83,5 @@
             </ItemsControl>
         </ScrollViewer>
     </Grid>
+
 </Page>

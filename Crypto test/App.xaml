@@ -3,20 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:view="clr-namespace:Crypto_test.View" 
              xmlns:viewModel="clr-namespace:Crypto_test.ViewModel"
-             >
+             xmlns:resources="clr-namespace:Crypto_test.Resources"
+             xmlns:local="clr-namespace:Crypto_test">
     <Application.Resources>
 
         <ResourceDictionary>
-
+            <!-- Подключаем MergedDictionaries -->
             <ResourceDictionary.MergedDictionaries>
-
-                <ResourceDictionary Source="View/Themes/LightTheme.xaml"/>
+                <ResourceDictionary Source="View/Themes/LightTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!-- Подключаем LocalizationManager для доступа к строкам -->
+            <resources:LocalizationManager x:Key="LocalizationManager" />
+
+            <!-- Конвертер для изменения цвета цены -->
             <view:PriceChangeToColorConverter x:Key="PriceChangeToColorConverter"/>
 
+            <!-- DataTemplate для главного окна -->
             <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
                 <view:MainView />
             </DataTemplate>
         </ResourceDictionary>
+
     </Application.Resources>
 </Application>
