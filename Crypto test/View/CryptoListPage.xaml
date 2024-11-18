@@ -29,11 +29,7 @@
                     Background="{DynamicResource ButtonBackground}" 
                     Foreground="{DynamicResource ButtonForeground}" 
                     Click="SetDarkTheme_Click" />
-            <StackPanel Orientation="Horizontal">
-                <Button Content="English" Click="SetEnglishLanguage_Click"/>
-                <Button Content="Русский" Click="SetRussianLanguage_Click"/>
-                <Button Content="Українська" Click="SetUkrainianLanguage_Click"/>
-            </StackPanel>
+
 
         </StackPanel>
 

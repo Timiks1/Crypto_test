@@ -36,11 +36,3 @@ C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypt
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\ref\Crypto test.dll
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\ConversionPage.g.cs
 C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\View\ConversionPage.baml
-C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\ru\Crypto test.resources.dll
-C:\Users\Tim\source\repos\Crypto test\Crypto test\bin\Debug\net8.0-windows\uk\Crypto test.resources.dll
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto_test.Resources.Resources.resources
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto_test.Resources.Resources.ru.resources
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto_test.Resources.Resources.uk.resources
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\Crypto test.csproj.GenerateResource.cache
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\ru\Crypto test.resources.dll
-C:\Users\Tim\source\repos\Crypto test\Crypto test\obj\Debug\net8.0-windows\uk\Crypto test.resources.dll

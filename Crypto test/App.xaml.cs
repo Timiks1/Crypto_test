@@ -4,7 +4,6 @@ using System.Data;
 using System.Windows;
 using Crypto_test.View;
 using System.Globalization;
-using Crypto_test.Resources;
 namespace Crypto_test
 {
     /// <summary>
@@ -15,7 +14,6 @@ namespace Crypto_test
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            SetLanguage("en");
             var mainViewModel = new MainViewModel();
             var mainView = new MainView { DataContext = mainViewModel };
 
@@ -36,10 +34,6 @@ namespace Crypto_test
                 MessageBox.Show($"Ошибка при переключении темы: {ex.Message}");
             }
 
-        }
-        public void SetLanguage(string cultureCode)
-        {
-            LocalizationManager.Instance.SetCulture(cultureCode);
         }
 
 
