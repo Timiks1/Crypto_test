@@ -3,21 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:view="clr-namespace:Crypto_test.View" 
              xmlns:viewModel="clr-namespace:Crypto_test.ViewModel"
-             xmlns:local="clr-namespace:Crypto_test">
+             xmlns:utils="clr-namespace:Crypto_test.Utils">
     <Application.Resources>
 
         <ResourceDictionary>
-            <!-- Подключаем MergedDictionaries -->
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="View/Themes/LightTheme.xaml" />
+                <ResourceDictionary Source="Resources/Themes/LightTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
 
 
-            <!-- Конвертер для изменения цвета цены -->
-            <view:PriceChangeToColorConverter x:Key="PriceChangeToColorConverter"/>
+            <utils:PriceChangeToColorConverter x:Key="PriceChangeToColorConverter"/>
 
-            <!-- DataTemplate для главного окна -->
             <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
                 <view:MainView />
             </DataTemplate>

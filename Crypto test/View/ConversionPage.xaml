@@ -3,43 +3,38 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Crypto_test.View"
+      xmlns:utils="clr-namespace:Crypto_test.Utils"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ConversionPage">
     <Page.Resources>
-        <local:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
-        <local:EmptyStringToVisibilityConverter x:Key="EmptyStringToVisibilityConverter"/>
+        <utils:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+        <utils:EmptyStringToVisibilityConverter x:Key="EmptyStringToVisibilityConverter"/>
     </Page.Resources>
     <Grid Background="{DynamicResource PrimaryBackgroundColor}" Margin="20">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
 
-            <!-- Кнопка Назад -->
             <Button Content="Назад" 
                     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" 
                     Background="{DynamicResource ButtonBackground}" 
                     Foreground="{DynamicResource ButtonForeground}" 
                     Click="BackButton_Click"/>
 
-            <!-- Заголовок страницы -->
             <TextBlock Text="Конвертер валют" 
                        FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" 
                        Foreground="{DynamicResource TextColor}"/>
 
-            <!-- Выбор исходной валюты -->
             <Grid Width="250" Margin="0,10,0,0">
                 <ComboBox ItemsSource="{Binding Currencies}" 
               SelectedItem="{Binding FromCurrency}" 
               Width="250"
               Background="{StaticResource SecondaryBackgroundColor}">
-                    <!-- Настройка ItemTemplate для элементов списка -->
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding name}" Foreground="{StaticResource TextColor}" />
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
 
-                    <!-- Настройка стиля для выбранного элемента -->
                     <ComboBox.Resources>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="Foreground" Value="{StaticResource TextColor}" />
@@ -50,32 +45,27 @@
             </Grid>
 
 
-            <!-- Поле ввода суммы -->
             <Grid Width="250" Margin="0,10,0,0">
                 <TextBox Text="{Binding AmountText, UpdateSourceTrigger=PropertyChanged}" 
                          Background="{DynamicResource SecondaryBackgroundColor}" 
                          Foreground="{DynamicResource TextColor}"/>
-                <!-- Placeholder для TextBox -->
                 <TextBlock Text="Введите сумму" Foreground="Gray" 
                            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
                            IsHitTestVisible="False"
                            Visibility="{Binding AmountText, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
             </Grid>
 
-            <!-- Выбор целевой валюты -->
             <Grid Width="250" Margin="0,10,0,0">
                 <ComboBox ItemsSource="{Binding Currencies}" 
               SelectedItem="{Binding ToCurrency}" 
               Width="250"
               Background="{StaticResource SecondaryBackgroundColor}">
-                    <!-- Настройка ItemTemplate для элементов списка -->
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding name}" Foreground="{StaticResource TextColor}" />
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
 
-                    <!-- Настройка стиля для выбранного элемента -->
                     <ComboBox.Resources>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="Foreground" Value="{StaticResource TextColor}" />
@@ -85,14 +75,12 @@
                 </ComboBox>
             </Grid>
 
-            <!-- Кнопка Конвертации -->
             <Button Content="Конвертировать" 
                     Width="250" Margin="0,10,0,0" 
                     Background="{DynamicResource ButtonBackground}" 
                     Foreground="{DynamicResource ButtonForeground}" 
                     Command="{Binding ConvertCommand}"/>
 
-            <!-- Результат конвертации -->
             <TextBlock Text="{Binding ConversionResult}" 
                        FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,0" 
                        Foreground="{DynamicResource TextColor}"/>

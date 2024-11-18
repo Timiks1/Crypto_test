@@ -3,9 +3,8 @@ using Crypto_test.Repository;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Threading.Tasks;
+
 
 namespace Crypto_test.ViewModel
 {

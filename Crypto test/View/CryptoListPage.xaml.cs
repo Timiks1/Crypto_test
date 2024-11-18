@@ -1,7 +1,6 @@
 ﻿using Crypto_test.Model.CoinMarket;
 using Crypto_test.Repository;
 using Crypto_test.ViewModel;
-using System.Configuration;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;

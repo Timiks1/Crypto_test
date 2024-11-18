@@ -1,14 +1,9 @@
 ﻿using Crypto_test.ViewModel;
-using System.Configuration;
-using System.Data;
 using System.Windows;
 using Crypto_test.View;
-using System.Globalization;
 namespace Crypto_test
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
+
     public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
@@ -24,7 +19,7 @@ namespace Crypto_test
         {
             try
             {
-                var uri = new Uri($"View/Themes/{theme}Theme.xaml", UriKind.Relative);
+                var uri = new Uri($"Resources/Themes/{theme}Theme.xaml", UriKind.Relative);
                 var themeResource = new ResourceDictionary { Source = uri };
                 Application.Current.Resources.MergedDictionaries.Clear();
                 Application.Current.Resources.MergedDictionaries.Add(themeResource);

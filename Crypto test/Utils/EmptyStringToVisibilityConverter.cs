@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows;
 
-namespace Crypto_test.View
+namespace Crypto_test.Utils
 {
     public class EmptyStringToVisibilityConverter : IValueConverter
     {

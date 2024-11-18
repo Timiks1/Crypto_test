@@ -3,7 +3,6 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Crypto_test.View"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CryptoListPage">
@@ -11,10 +10,8 @@
     <Grid Background="{DynamicResource PrimaryBackgroundColor}">
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16">
-            <!-- Поле поиска -->
             <TextBox x:Name="SearchTextBox" Width="300" Background="{DynamicResource SecondaryBackgroundColor}" Foreground="{DynamicResource TextColor}" TextChanged="SearchTextBox_TextChanged" />
 
-            <!-- Кнопка перехода на страницу конвертации -->
             <Button Content="Конвертер" Width="100" Margin="10,0,0,0" 
                 Background="{DynamicResource ButtonBackground}" 
                 Foreground="{DynamicResource ButtonForeground}" 
@@ -33,7 +30,6 @@
 
         </StackPanel>
 
-        <!-- Контент с прокруткой -->
         <ScrollViewer Margin="0,60,0,0">
             <ItemsControl Name="CryptoItemsControl" ItemsSource="{Binding FilteredCurrencies}">
                 <ItemsControl.ItemsPanel>
@@ -55,19 +51,16 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
 
-                                <!-- Название и символ -->
                                 <StackPanel Orientation="Vertical" Grid.Column="1" Margin="16,0">
                                     <TextBlock Text="{Binding name}" FontWeight="Bold" Foreground="{DynamicResource TextColor}" FontSize="16"/>
                                     <TextBlock Text="{Binding symbol}" Foreground="{DynamicResource TextColor}" FontSize="12"/>
                                 </StackPanel>
 
-                                <!-- Текущая цена -->
                                 <TextBlock Text="{Binding quote.USD.price, StringFormat=C}" 
                                        Foreground="{DynamicResource TextColor}" FontSize="14" 
                                        VerticalAlignment="Center" HorizontalAlignment="Right"
                                        Margin="16,0,16,0" Grid.Column="2"/>
 
-                                <!-- Изменение цены за 24 часа -->
                                 <TextBlock Text="{Binding quote.USD.percent_change_24h, StringFormat=F2}" 
                                        Foreground="{Binding quote.USD.percent_change_24h, Converter={StaticResource PriceChangeToColorConverter}}"
                                        FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Right"

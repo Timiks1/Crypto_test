@@ -1,8 +1,6 @@
 ﻿using Crypto_test.Model.CoinMarket;
 using Crypto_test.Repository;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace Crypto_test.ViewModel
 {
@@ -30,7 +28,6 @@ namespace Crypto_test.ViewModel
                 TopCurrencies.Add(currency);
             }
 
-            // Отображаем первые 20 валют
             FilteredCurrencies.Clear();
             foreach (var currency in TopCurrencies.Take(20))
             {
@@ -44,7 +41,6 @@ namespace Crypto_test.ViewModel
 
             if (string.IsNullOrEmpty(searchText))
             {
-                // Если поле ввода пустое, показываем первые 20 валют
                 foreach (var currency in TopCurrencies.Take(20))
                 {
                     FilteredCurrencies.Add(currency);
@@ -52,7 +48,6 @@ namespace Crypto_test.ViewModel
             }
             else
             {
-                // Фильтруем список валют по имени или символу
                 var filtered = TopCurrencies
                     .Where(c => c.name.Contains(searchText, StringComparison.OrdinalIgnoreCase) ||
                                 c.symbol.Contains(searchText, StringComparison.OrdinalIgnoreCase));

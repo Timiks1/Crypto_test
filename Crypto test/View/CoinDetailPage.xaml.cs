@@ -14,14 +14,11 @@ namespace Crypto_test.View
         {
             InitializeComponent();
 
-            // Создаём экземпляр репозитория
             var repository = new CurrencyRepository();
 
-            // Передаём валюту и репозиторий в ViewModel
             _viewModel = new CoinDetailViewModel(currency, repository);
             DataContext = _viewModel;
 
-            // Вызываем асинхронную инициализацию данных
             Loaded += async (s, e) => await _viewModel.InitializeAsync();
         }
 

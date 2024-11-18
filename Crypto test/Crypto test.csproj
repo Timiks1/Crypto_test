@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Page Remove="View\Themes\DarkTheme.xaml" />
-    <Page Remove="View\Themes\LightTheme.xaml" />
+    <Page Remove="Resources\Themes\DarkTheme.xaml" />
+    <Page Remove="Resources\Themes\LightTheme.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,8 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="View\Themes\DarkTheme.xaml" />
-    <Resource Include="View\Themes\LightTheme.xaml" />
+    <Resource Include="Resources\Themes\DarkTheme.xaml" />
+    <Resource Include="Resources\Themes\LightTheme.xaml" />
   </ItemGroup>
 
 </Project>

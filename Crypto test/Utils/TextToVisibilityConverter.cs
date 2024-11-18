@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows;
 
-namespace Crypto_test.View
+namespace Crypto_test.Utils
 {
     public class TextToVisibilityConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            // Показываем TextBlock, если TextBox пуст
+
             return string.IsNullOrEmpty(value as string) ? Visibility.Visible : Visibility.Collapsed;
         }
 

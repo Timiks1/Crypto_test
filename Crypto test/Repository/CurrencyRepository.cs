@@ -21,7 +21,7 @@ namespace Crypto_test.Repository
 
         public async Task<IEnumerable<Currency>> GetCurrenciesAsync()
         {
-            string apiKey = ConfigurationManager.AppSettings["CoinMarketCapApiKey"]; // Извлекаем ключ из конфигурации
+            string apiKey = ConfigurationManager.AppSettings["CoinMarketCapApiKey"];
             if (string.IsNullOrEmpty(apiKey))
             {
                 throw new InvalidOperationException("API ключ не найден. Проверьте конфигурацию.");
@@ -29,7 +29,7 @@ namespace Crypto_test.Repository
 
             string url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
             _httpClient.DefaultRequestHeaders.Clear();
-            _httpClient.DefaultRequestHeaders.Add("X-CMC_PRO_API_KEY", apiKey); // Динамическое использование ключа
+            _httpClient.DefaultRequestHeaders.Add("X-CMC_PRO_API_KEY", apiKey);
             _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
             var response = await _httpClient.GetStringAsync(url);

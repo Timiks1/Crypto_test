@@ -36,10 +36,10 @@
     <Page Update="View\MainView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Resource Update="View\Themes\DarkTheme.xaml">
+    <Resource Update="Resources\Themes\DarkTheme.xaml">
       <SubType>Designer</SubType>
     </Resource>
-    <Resource Update="View\Themes\LightTheme.xaml">
+    <Resource Update="Resources\Themes\LightTheme.xaml">
       <SubType>Designer</SubType>
     </Resource>
   </ItemGroup>

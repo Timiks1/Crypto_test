@@ -5,19 +5,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using System.Windows.Media;
 
-namespace Crypto_test.View
+namespace Crypto_test.Utils
 {
-    public class AdaptiveFontSizeConverter : IValueConverter
+
+    public class PriceChangeToColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is double width)
+            if (value is double change)
             {
-                // Устанавливаем базовый размер шрифта и масштабируем относительно ширины
-                return Math.Max(16, width / 30); // Здесь можно настроить делитель для контроля размера
+                if (change > 0)
+                {
+                    return Brushes.Green;
+                }
+                else if (change < 0)
+                {
+                    return Brushes.Red;
+                }
             }
-            return 16; // Базовый размер по умолчанию
+            return Brushes.Gray;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

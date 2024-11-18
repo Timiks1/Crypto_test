@@ -1,5 +1,4 @@
 ﻿using Crypto_test.Model.CoinMarket;
-using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
